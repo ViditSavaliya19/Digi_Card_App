@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtHeaderTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Header Theme"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+    <HorizontalScrollView
+        android:scrollbarSize="1dp"
+        android:id="@+id/headerColor"
+        android:layout_below="@+id/txtHeaderTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <LinearLayout
+           android:gravity="center"
+           android:layout_width="match_parent"
+           android:layout_marginTop="10dp"
+           android:layout_height="60dp">
+
+           <LinearLayout
+               android:id="@+id/color1"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:backgroundTint="@color/green"
+               android:background="@drawable/avatar_shape" />
+           <LinearLayout
+               android:id="@+id/color2"
+               android:layout_marginLeft="5dp"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:backgroundTint="@color/amber"
+               android:background="@drawable/avatar_shape" />
+           <LinearLayout
+               android:id="@+id/color3"
+               android:layout_marginLeft="5dp"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:backgroundTint="@color/red"
+               android:background="@drawable/avatar_shape" />
+           <LinearLayout
+               android:id="@+id/color4"
+               android:layout_marginLeft="5dp"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:backgroundTint="@color/purple"
+               android:background="@drawable/avatar_shape" />
+           <LinearLayout
+               android:id="@+id/color5"
+               android:layout_marginLeft="5dp"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:backgroundTint="@color/pink"
+               android:background="@drawable/avatar_shape" />
+           <LinearLayout
+               android:id="@+id/color6"
+               android:layout_marginLeft="5dp"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:backgroundTint="@color/blue"
+               android:background="@drawable/avatar_shape" />
+           <LinearLayout
+               android:id="@+id/color7"
+               android:layout_marginLeft="5dp"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:backgroundTint="@color/primaryColor"
+               android:background="@drawable/avatar_shape" />
+
+       </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/headerColor"
+        android:id="@+id/txtContentTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Content Theme"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <HorizontalScrollView
+        android:id="@+id/bgImageScroll"
+        android:scrollbarSize="1dp"
+        android:layout_below="@+id/txtContentTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/bgImg1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/bg1"/>
+            <ImageView
+                android:id="@+id/bgImg2"
+                android:scaleType="centerCrop"
+                android:layout_width="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="50dp"
+                android:src="@drawable/bg2"/>
+            <ImageView
+                android:id="@+id/bgImg3"
+                android:scaleType="centerCrop"
+                android:layout_width="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="50dp"
+                android:src="@drawable/bg3"/>
+            <ImageView
+                android:id="@+id/bgImg4"
+                android:scaleType="centerCrop"
+                android:layout_width="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="50dp"
+                android:src="@drawable/bg4"/>
+            <ImageView
+                android:id="@+id/bgImg5"
+                android:scaleType="centerCrop"
+                android:layout_width="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="50dp"
+                android:src="@drawable/bg5"/>
+            <ImageView
+                android:id="@+id/bgImg6"
+                android:scaleType="centerCrop"
+                android:layout_width="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="50dp"
+                android:src="@drawable/bg6"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/bgImageScroll"
+        android:id="@+id/txtContentFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Content Font Style"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <HorizontalScrollView
+        android:id="@+id/fontStyleScroll"
+        android:scrollbarSize="1dp"
+        android:layout_below="@+id/txtContentFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/fontStyle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Font"
+                android:fontFamily="@font/poppins"
+                android:textSize="25dp"/>
+            <TextView
+                android:id="@+id/fontStyle2"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Font"
+                android:fontFamily="@font/font1"
+                android:textSize="25dp"/>
+            <TextView
+                android:id="@+id/fontStyle3"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Font"
+                android:fontFamily="@font/font2"
+                android:textSize="25dp"/>
+            <TextView
+                android:id="@+id/fontStyle4"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Font"
+                android:fontFamily="@font/font3"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/fontStyle5"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Font"
+                android:fontFamily="@font/font4"
+                android:textSize="25dp"/>
+            <TextView
+                android:id="@+id/fontStyle6"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Font"
+                android:fontFamily="@font/font5"
+                android:textSize="25dp"/>
+            <TextView
+                android:id="@+id/fontStyle7"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Font"
+                android:fontFamily="@font/font6"
+                android:textSize="25dp"/>
+            <TextView
+                android:id="@+id/fontStyle8"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Font"
+                android:fontFamily="@font/font7"
+                android:textSize="25dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/fontStyleScroll"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"/>
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
